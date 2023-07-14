@@ -13,5 +13,9 @@ describe("check assertions", () => {
      });
      it("check assert 2 - expect", () => {
           cy.expect(true).to.be.true;
+     });
+     it("check assert 3 - assert", () => {
+          assert.equal(4, "4", "equals");
+          assert.strictEqual(4, "4", "stricts equals"); // this test will fail
      })
 });
