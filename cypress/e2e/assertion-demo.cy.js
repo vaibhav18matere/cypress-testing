@@ -5,10 +5,10 @@ describe("check assertions", () => {
 
           cy.get('#query-btn')
                .should("contain", "Button")
-               .should("have.class", "query-btn")
+               .and("have.class", "query-btn")
           //   .should("be.disabled")
           // this test will fail as the btn is enabled in UI.
-               .should("be.enabled")
-               .should("be.visible")
+               .and("be.enabled")
+               .and("be.visible")
      })
 });
